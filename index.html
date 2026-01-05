@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Bio-Data - Patan Babajan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #1a4d2e; /* Islamic Green */
+            --accent-color: #d4af37; /* Gold */
+            --text-color: #333333;
+            --bg-color: #fdfbf7; /* Cream/Off-white */
+            --section-bg: #ffffff;
+        }
+
+        @media print {
+            body { 
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--section-bg);
+            padding: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 8px;
+            position: relative;
+            border: 1px solid #e0e0e0;
+        }
+
+        /* Decorative Borders */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 2px solid var(--accent-color);
+            pointer-events: none;
+            border-radius: 4px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .bismillah {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            font-size: 36px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section-title {
+            background-color: var(--primary-color);
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            padding: 8px 15px;
+            border-radius: 4px 4px 20px 4px;
+            display: inline-block;
+            margin-bottom: 20px;
+            box-shadow: 2px 2px 0px var(--accent-color);
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 12px 20px;
+            align-items: baseline;
+        }
+
+        .details-row {
+            display: contents;
+        }
+
+        .label {
+            font-weight: 700;
+            color: var(--primary-color);
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .value {
+            color: var(--text-color);
+            font-weight: 400;
+        }
+
+        .address-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            font-style: italic;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .ornament {
+            text-align: center;
+            color: var(--accent-color);
+            font-size: 20px;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+            border: 2px solid var(--accent-color);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        @media print {
+            .gallery {
+                break-inside: avoid;
+            }
+            .gallery img {
+                box-shadow: none;
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="bismillah">﷽</div>
+            <div class="bismillah">In the name of Allah, the Most Gracious, the Most Merciful</div>
+            <h1>Bio-Data</h1>
+        </div>
+
+        <!-- Personal Details -->
+        <div class="section">
+            <div class="section-title">Personal Details</div>
+            <div class="details-grid">
+                <div class="details-row">
+                    <div class="label">Name</div>
+                    <div class="value">Patan Babajan</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Date of Birth</div>
+                    <div class="value">19-06-2002</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Height</div>
+                    <div class="value">5'9"</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Mobile No</div>
+                    <div class="value">9866178972</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Email ID</div>
+                    <div class="value">babajank98@gmail.com</div>
+                </div>
+                <!-- Added Education/Job here to group similar info, 
+                     or we can follow exact image structure. 
+                     The image mixes Personal & Professional in one block. 
+                     I will follow the image's "Personal Details" grouping for accuracy 
+                     but clearer hierarchy. -->
+                <div class="details-row">
+                    <div class="label">Qualification</div>
+                    <div class="value">B.Tech – Mechanical Engineering</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Job Profile</div>
+                    <div class="value">Software Developer (Frontend SDE-1)</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Company</div>
+                    <div class="value">Razorpay</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Annual CTC</div>
+                    <div class="value">26 LPA</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Monthly Salary</div>
+                    <div class="value">~2 Lakhs (Including Taxes)</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Caste</div>
+                    <div class="value">Sunni-Muslim/Pathan</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ornament">❖</div>
+
+        <!-- Family Details -->
+        <div class="section">
+            <div class="section-title">Family Details</div>
+            <div class="details-grid">
+                <div class="details-row">
+                    <div class="label">Father Name</div>
+                    <div class="value">P. Chand Basha</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Father Mobile No</div>
+                    <div class="value">91330 85935</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Mother Name</div>
+                    <div class="value">P. Shahin Taj</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Brother Name</div>
+                    <div class="value">Patan Habeebulla</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Brother Qualification</div>
+                    <div class="value">B.Tech – Chemical Engineering</div>
+                </div>
+                <div class="details-row">
+                    <div class="label">Brother Job</div>
+                    <div class="value">Currently in Final Year</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ornament">❖</div>
+
+        <!-- Address -->
+        <div class="section">
+            <div class="section-title">Address</div>
+            <div class="address-box">
+                3/698, Near Police Station, Library Street,<br>
+                Chilamathur,<br>
+                Sri Sathya Sai District,<br>
+                PIN Code: 515341
+            </div>
+        </div>
+
+        <div class="ornament">❖</div>
+
+        <!-- Photo Gallery -->
+        <div class="section">
+            <div class="section-title">Photos</div>
+            <div class="gallery">
+                <img src="images/photo6.jpeg" alt="Photo 6">
+                <img src="images/photo1.jpg" alt="Photo 1">
+                <img src="images/photo5.jpg" alt="Photo 5">
+                <img src="images/photo2.jpg" alt="Photo 2">
+                <img src="images/photo3.jpg" alt="Photo 3">
+                <img src="images/photo4.jpg" alt="Photo 4">
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Alhamdulillah</p>
+        </div>
+    </div>
+
+</body>
+</html>
